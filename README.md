@@ -1,2 +1,2 @@
 # kringlet
-An excercise for Ember (while also being a nifty tool for secret santa exchanges)
+An excercise for Ember.js and Ember CLI
