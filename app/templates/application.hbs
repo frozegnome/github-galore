@@ -1,9 +1,11 @@
 <header>
-  
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    {{#link-to 'index'}}<h1>GITHUB GALORE</h1>{{/link-to}}
+		</div>	
+	</nav>
 </header>
 
-{{outlet}}
-
-<footer>
-  
-</footer>
+<main class="container">
+  {{outlet}}
+</main>

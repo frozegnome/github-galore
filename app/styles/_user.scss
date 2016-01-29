@@ -1,0 +1,19 @@
+.user {
+	border-left: 1px solid white;
+  margin: 0 0 10px;
+
+  img {
+  	border: 2px solid white;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px; 
+  }
+
+  li {
+  	line-height: 2em;
+  	padding: 5px 0 5px 10px;
+  }
+  li:last-child {
+  	text-decoration: underline;
+  }
+}

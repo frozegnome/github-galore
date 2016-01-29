@@ -1,0 +1,10 @@
+<ul class="breadcrumb">
+	{{#link-to 'index'}}<li>Devs</li>{{/link-to}}
+	{{#link-to 'user'}}<li>{{user}}</li>{{/link-to}}
+	<li class="active">Repositories</li>
+</ul>
+<div class="repositories">
+	{{#each repo in model}}
+	  <div>{{repo.name}}</div>
+	{{/each}}
+</div>

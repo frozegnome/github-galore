@@ -1,0 +1,48 @@
+.col-xs-12 {
+  margin: 10px 0 0;
+}
+
+.index-card {
+  @include clearfix;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: inset -1px -1px 8px 1px rgba(0, 0, 0, .45);
+  color: #373737;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px 5px;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+
+  img {
+    border: 2px solid #373737;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.index-card::after {
+  border-radius: 10px;
+  content: '';
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  width: 100%;
+  z-index: -1;
+}
+
+.index-card:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.index-card:hover::after {
+  opacity: 1;
+}

@@ -1,1 +1,11 @@
-{{outlet}}
+<h3>SELECT A DEV PERSON</h3>
+<div class="col-xs-12">
+{{#each dev in model}}
+  {{#link-to 'user' dev.login}}
+		<div class="index-card col-xs-12 col-sm-3">
+		  <div class="col-xs-5"><img {{bind-attr src=dev.avatar_url}}/></div>
+		  <div class="col-xs-7">{{dev.name}}</div>
+		</div>
+	{{/link-to}}
+{{/each}}
+</div>

@@ -1,0 +1,17 @@
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin fade-in {
+	-webkit-animation-duration: .5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-name: loadInElement;
+	-webkit-animation-timing-function: ease-out;
+}

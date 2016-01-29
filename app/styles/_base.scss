@@ -1,0 +1,50 @@
+h1 {
+	font-size: 48px;
+  text-transform: uppercase;
+}
+
+h3 {
+	font-size: 20px;
+  text-transform: uppercase;
+}
+
+a,
+a:hover,
+a:focus {
+	color: white;
+  text-decoration: none;
+}
+
+body {
+	background: #373737;
+	color: white;
+	font-family: "Oswald";
+}
+
+.navbar {
+	@include fade-in
+	background: transparent;
+	border: transparent;
+	padding: 20px;
+	text-align: center;
+
+	h1 {
+		border-bottom: 2px solid white;
+		padding: 0 0 5px;
+	}
+}
+
+main {
+	@include fade-in;
+}
+
+@-webkit-keyframes loadInElement {
+  0% {
+    -webkit-filter: opacity(.15);
+    -webkit-transform: translateY(1px);
+  }
+  100% {
+    -webkit-filter: opacity(1);
+    -webkit-transform: translateY(0);
+  }
+}

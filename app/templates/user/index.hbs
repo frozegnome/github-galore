@@ -1,0 +1,17 @@
+<ul class="breadcrumb">
+	{{#link-to 'index'}}<li>Devs</li>{{/link-to}}
+	<li class="active">{{model.name}}</li>
+</ul>
+<div class="user-index">
+	<ul>
+		{{#link-to 'user.repositories'}}
+		  <li class="index-card"><h3>Repositories</h3></li>
+		{{/link-to}}
+		{{#link-to 'user.stars'}}
+		  <li class="index-card"><h3>Starred</h3></li>
+		{{/link-to}}
+		{{#link-to 'user.gists'}}
+		  <li class="index-card"><h3>Gists</h3></li>
+		{{/link-to}}
+	</ul>
+</div>

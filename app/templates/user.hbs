@@ -1,0 +1,17 @@
+<h1>{{model.name}}</h1>
+<div class="col-xs-12 col-sm-3">
+	<div class="container user">
+		<a href="{{model.html_url}}">
+		  <img {{bind-attr src=model.avatar_url}} />
+		</a>
+		<ul>
+			<li><h3>Followers: {{model.followers}}</h3></li>
+			<li><h3>Following: {{model.following}}</h3></li>
+			<br>
+		</ul>
+	</div>
+	{{#link-to 'index'}}<h1>&#9664; Back</h1>{{/link-to}}
+</div>
+<div class="col-xs-12 col-sm-9">
+	{{outlet}}
+</div>
