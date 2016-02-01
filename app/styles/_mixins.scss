@@ -15,3 +15,21 @@
 	-webkit-animation-name: loadInElement;
 	-webkit-animation-timing-function: ease-out;
 }
+
+@mixin selection-list {
+  a {
+    margin: 10px 0 10px 10px;
+
+    div { 
+      border: 1px solid white;
+      font-size: 18px;
+      padding: 7px;
+      transition: all .3s;
+    }
+    div:hover {
+      border: 1px solid transparent;
+      background: white;
+      color: #373737;
+    }
+  }
+}

@@ -1,10 +1,23 @@
 <ul class="breadcrumb">
 	{{#link-to 'index'}}<li>Devs</li>{{/link-to}}
-	{{#link-to 'user'}}<li>{{user}}</li>{{/link-to}}
+	{{#link-to 'user'}}<li>{{user.login}}</li>{{/link-to}}
 	<li class="active">Repositories</li>
 </ul>
 <div class="repositories">
-	{{#each repo in model}}
-	  <div>{{repo.name}}</div>
-	{{/each}}
+  {{#if model}}
+	  {{#each model as |repo|}}
+			<a href="{{repo.html_url}}" target="_blank">
+		    <div>
+		      {{repo.name}}
+		      {{#if repo.fork}}
+			      (Fork)
+			    {{if else repo.starred}}
+			      (Starred)
+			    {{/if}}
+			  </div>
+			</a>
+	  {{/each}}
+	{{else}}
+    <h3>No Repositories to show</h3>
+	{{/if}}
 </div>

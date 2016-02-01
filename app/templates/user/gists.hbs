@@ -1,1 +1,22 @@
-dfghdfdhfdh
+<ul class="breadcrumb">
+	{{#link-to 'index'}}<li>Devs</li>{{/link-to}}
+	{{#link-to 'user'}}<li>{{user.login}}</li>{{/link-to}}
+	<li class="active">Gists</li>
+</ul>
+<div class="repositories">
+	{{#if model}}
+	  {{#each model as |gist|}}
+			<a href="{{gist.html_url}}" target="_blank">
+		    <div>
+		    {{#if gist.description}}
+	        {{gist.description}}
+	      {{else}}
+	        A Nameless Gist
+	      {{/if}}
+			  </div>
+			</a>
+	  {{/each}}
+	{{else}}
+	  <h3>No Gists to show</h3>
+  {{/if}}
+</div>

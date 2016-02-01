@@ -1,1 +1,18 @@
-htrsxthxdffg
+<ul class="breadcrumb">
+	{{#link-to 'index'}}<li>Devs</li>{{/link-to}}
+	{{#link-to 'user'}}<li>{{user.login}}</li>{{/link-to}}
+	<li class="active">Starred</li>
+</ul>
+<div class="stars">
+  {{#if model}}
+		{{#each model as |starred|}}
+			<a href="{{starred.html_url}}" target="_blank">
+		    <div>
+		      {{starred.name}}
+			  </div>
+			</a>
+		{{/each}}
+	{{else}}
+    <h3>No Starred Repositories to show</h3>
+	{{/if}}
+</div>
