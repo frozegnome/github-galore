@@ -1,7 +1,7 @@
 {
-  "name": "kringlet",
+  "name": "github-galore",
   "version": "0.0.0",
-  "description": "Small description for kringlet goes here",
+  "description": "Small description for github-galore goes here",
   "private": true,
   "directories": {
     "doc": "doc",
