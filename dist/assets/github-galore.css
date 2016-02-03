@@ -1,0 +1,209 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.breadcrumb li {
+  color: #4a7db7;
+  display: inline-block; }
+
+.breadcrumb li::after {
+  color: #ff9d72;
+  content: ' / '; }
+
+.breadcrumb .active:after {
+  content: ''; }
+
+h1 {
+  font-size: 48px;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 20px;
+  text-transform: uppercase; }
+
+a,
+a:hover,
+a:focus {
+  color: white;
+  text-decoration: none; }
+
+body {
+  background: #373737;
+  color: white;
+  font-family: "Oswald";
+  text-transform: uppercase; }
+
+.navbar {
+  -webkit-animation-duration: .5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: loadInElement;
+  -webkit-animation-timing-function: ease-out;
+  background: transparent;
+  border: transparent;
+  padding: 20px;
+  text-align: center; }
+  .navbar h1 {
+    border-bottom: 2px solid white;
+    padding: 0 0 5px; }
+
+main {
+  -webkit-animation-duration: .5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: loadInElement;
+  -webkit-animation-timing-function: ease-out; }
+
+@-webkit-keyframes loadInElement {
+  0% {
+    -webkit-filter: opacity(0.15);
+    -webkit-transform: translateY(1px); }
+  100% {
+    -webkit-filter: opacity(1);
+    -webkit-transform: translateY(0); } }
+
+.col-xs-12 {
+  margin: 10px 0 0; }
+
+.index-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: inset -1px -1px 8px 1px rgba(0, 0, 0, 0.45);
+  color: #373737;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px 5px;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  .index-card:before, .index-card:after {
+    content: ' ';
+    display: table; }
+  .index-card:after {
+    clear: both; }
+  .index-card img {
+    border: 2px solid #373737;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px; }
+
+.index-card::after {
+  border-radius: 10px;
+  content: '';
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  width: 100%;
+  z-index: -1; }
+
+.index-card:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1); }
+
+.index-card:hover::after {
+  opacity: 1; }
+
+.login {
+  margin: 0 0 15px; }
+
+.user {
+  border-left: 1px solid white;
+  margin: 0 0 10px; }
+  .user img {
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px; }
+  .user li {
+    line-height: 2em;
+    padding: 5px 0 5px 10px; }
+  .user li:last-child {
+    text-decoration: underline; }
+
+.back {
+  margin: 0 0 10px; }
+
+.user-index {
+  border-left: 1px solid white;
+  max-width: 100%;
+  margin: 0 0 30px; }
+  .user-index .index-card {
+    min-width: 50%;
+    text-align: center; }
+
+.repositories a {
+  margin: 10px 0 10px 10px; }
+  .repositories a div {
+    border: 1px solid white;
+    font-size: 18px;
+    padding: 12px 7px;
+    transition: all .3s; }
+  .repositories a div:hover {
+    border: 1px solid transparent;
+    background: white;
+    color: #373737; }
+
+.repositories aside {
+  border: 2px solid #7ec982;
+  color: #7ec982;
+  display: inline;
+  font-size: 15px;
+  margin: 0 0 0 9px;
+  padding: 0 3px; }
+
+.stars a {
+  margin: 10px 0 10px 10px; }
+  .stars a div {
+    border: 1px solid white;
+    font-size: 18px;
+    padding: 12px 7px;
+    transition: all .3s; }
+  .stars a div:hover {
+    border: 1px solid transparent;
+    background: white;
+    color: #373737; }
+
+.gists a {
+  margin: 10px 0 10px 10px; }
+  .gists a div {
+    border: 1px solid white;
+    font-size: 18px;
+    padding: 12px 7px;
+    transition: all .3s; }
+  .gists a div:hover {
+    border: 1px solid transparent;
+    background: white;
+    color: #373737; }
+
+/*# sourceMappingURL=github-galore.css.map */
