@@ -10,9 +10,7 @@
 		    <div>
 		      {{repo.name}}
 		      {{#if repo.fork}}
-			      (Fork)
-			    {{if else repo.starred}}
-			      (Starred)
+			      <aside>Fork</aside>
 			    {{/if}}
 			  </div>
 			</a>

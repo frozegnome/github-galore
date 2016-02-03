@@ -1,3 +1,12 @@
 .repositories {
 	@include selection-list;
+  
+  aside {
+		border: 2px solid #7ec982;
+    color: #7ec982;
+	  display: inline;
+	  font-size: 15px;
+	  margin: 0 0 0 9px;
+	  padding: 0 3px;
+	}
 }
